@@ -3,12 +3,8 @@ import { Button } from 'primevue';
 </script>
 
 <template>
-    <section class="w-full flex justify-between p-4">
-        <Button label="Upload Image" severity="info" size="small" />
-        <div class="flex gap-2">
-            <Button label="Grayscale" severity="secondary"  size="small"/>
-            <Button label="Binarize Image" severity="contrast"  size="small"/>
-            <Button label="Graph" severity="help" size="small" />
-        </div>
+    <section class="w-full flex gap-2 justify-start my-6">
+        <Button label="Upload" severity="info" size="small" icon="pi pi-upload" />
+        <Button label="Graph" severity="danger" size="small" icon="pi pi-chart-line" />
     </section>
 </template>
