@@ -13,6 +13,6 @@ import Sidebar from '../components/Sidebar.vue';
             <ImagesContainer class="w-full" />
         </div>
 
-        <Histogram class="mt-4" />
+        <Histogram class="my-4" />
     </div>
 </template>

@@ -2,9 +2,47 @@
 @import '../node_modules/primeicons/primeicons.css';
 
 :root {
-    background-color: #eee;
+    background-color: #f0f0f0;
 }
 
 .my-app-dark {
     background-color: #121212;
+}
+
+.p-slider {
+    --p-slider-track-size: 0.8rem;
+}
+
+.p-slider-handle {
+    --p-slider-handle-background: var(--color-blue-500);
+    --p-slider-handle-hover-background: var(--color-blue-500);
+    --p-slider-handle-content-hover-background: var(--color-blue-500);
+    --p-slider-handle-width: 1.5rem;
+    --p-slider-handle-height: 1.5rem;
+}
+
+.p-slider-range {
+    --p-slider-range-background: var(--color-blue-500);
+}
+
+.p-button {
+    --p-button-primary-background: #007BFF;
+    --p-button-primary-hover-background: #0056b3;
+    --p-button-primary-active-background: #004085;
+
+    --p-button-primary-border-color: #007BFF;
+    --p-button-primary-hover-border-color: #0056b3;
+    --p-button-primary-active-border-color: #004085;
+}
+
+.p-button:disabled {
+    --p-button-primary-background: #A3D1FF;
+    --p-button-primary-border-color: #A3D1FF;
+    --p-button-primary-hover-background: #A3D1FF;
+    --p-button-primary-hover-border-color: #A3D1FF;
+}
+
+.p-toggleswitch {
+    --p-toggleswitch-checked-background: var(--color-blue-500);
+    --p-toggleswitch-checked-hover-background: var(--color-blue-500);
 }

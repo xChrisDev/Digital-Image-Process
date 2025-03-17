@@ -1,5 +1,13 @@
 <script setup>
 import { Button, Card } from 'primevue';
+import { onMounted } from 'vue';
+import { drawGrayScaleImage, drawBinarizedImage, graphHistogram } from '../services/ImageHandler';
+
+onMounted(() => {
+    document.getElementById('gray').disabled = true
+    document.getElementById('binary').disabled = true
+    document.getElementById('graph').disabled = true
+})
 </script>
 
 <template>
@@ -12,9 +20,12 @@ import { Button, Card } from 'primevue';
         </template>
         <template #content>
             <div class="flex flex-wrap gap-2">
-                <Button class="w-full" label="Grayscale" severity="secondary" icon="pi pi-sun" iconPos="top"/>
-                <Button class="w-full" label="Binarize" severity="contrast" icon="pi pi-sparkles" iconPos="top"/>
-                <Button class="w-full" label="Graph" severity="danger" icon="pi pi-chart-line" iconPos="top"/>
+                <Button class="w-full" id="gray" label="Grayscale" severity="primary" icon="pi pi-sun"
+                    @click="drawGrayScaleImage" />
+                <Button class="w-full" id="binary" label="Binarize" severity="contrast" icon="pi pi-sparkles"
+                    @click="drawBinarizedImage" />
+                <Button class="w-full" id="graph" label="Graph" severity="danger" icon="pi pi-chart-line"
+                    @click="graphHistogram" />
             </div>
         </template>
     </Card>
