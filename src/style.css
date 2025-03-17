@@ -1,6 +1,10 @@
 @import "tailwindcss";
 @import '../node_modules/primeicons/primeicons.css';
 
-:root{
-    background-color: #e4e4e4;
+:root {
+    background-color: #eee;
+}
+
+.my-app-dark {
+    background-color: #121212;
 }

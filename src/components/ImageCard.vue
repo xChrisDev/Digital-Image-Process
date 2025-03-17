@@ -1,15 +1,15 @@
 <script setup>
-import { Image } from 'primevue';
+const props = defineProps({
+    id: String,
+    title: String
+})
 </script>
 
 <template>
-    <div
-        class="lg:max-w-md md:max-w-sm bg-white rounded-2xl shadow-lg overflow-hidden transition-transform duration-300">
-        <Image src="https://primefaces.org/cdn/primevue/images/galleria/galleria10.jpg" alt="Imagen" width="100%"
-            preview />
-
+    <div class="bg-white rounded-lg border-2 border-gray-200">
+        <canvas class="w-full" :id="props.id"></canvas>
         <div class="flex justify-center items-center pb-2">
-            <h2 class="text-xl font-semibold text-gray-800">Título de la Imagen</h2>
+            <h2 class="text-md font-semibold text-gray-800">{{ props.title }}</h2>
         </div>
     </div>
 </template>
